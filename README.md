@@ -67,9 +67,9 @@ const res = await jic(() => fetch(url, opts), {
 Returns the advertised delay in milliseconds, or `null` if there isn't a usable one. Accepts a `Headers` object or a plain object with any capitalisation. Exported on its own because it's useful outside a retry loop.
 
 ```js
-parseRetryAfter(new Headers({ 'retry-after': '3' }));                         // 3000
-parseRetryAfter(new Headers({ 'retry-after': 'Wed, 21 Oct 2026 07:28:30 GMT' })); // ms until then
-parseRetryAfter({ 'Retry-After-Ms': '1500' });                                // 1500
+parseRetryAfter(new Headers({ 'retry-after': '3' }));                         
+parseRetryAfter(new Headers({ 'retry-after': 'Wed, 21 Oct 2026 07:28:30 GMT' })); 
+parseRetryAfter({ 'Retry-After-Ms': '1500' });                               
 ```
 
 ### `RetryLimitError`
