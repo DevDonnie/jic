@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "Retry for LLM and HTTP APIs that actually respects Retry-After. Zero dependencies.",
   "keywords": [
-    "retry", "backoff", "exponential-backoff", "retry-after", "rate-limit",
-    "429", "fetch", "llm", "openai", "anthropic", "resilience"
+    "retry",
+    "backoff",
+    "exponential-backoff",
+    "retry-after",
+    "rate-limit",
+    "429",
+    "fetch",
+    "llm",
+    "openai",
+    "anthropic",
+    "resilience"
   ],
   "author": "donniedev",
   "license": "MIT",
@@ -20,8 +29,14 @@
       "require": "./dist/cjs/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
-  "engines": { "node": ">=18" },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "rm -rf dist && tsc && tsc -p tsconfig.cjs.json && node scripts/fixup.mjs",
     "test": "npm run build && node --test test/*.test.js",
@@ -30,5 +45,13 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "typescript": "^5.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevDonnie/jic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevDonnie/jic/issues"
+  },
+  "homepage": "https://github.com/DevDonnie/jic#readme"
 }
