@@ -1,6 +1,6 @@
 {
   "name": "@donniedev/jic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Retry for LLM and HTTP APIs that actually respects Retry-After. Zero dependencies.",
   "keywords": [
     "retry",
